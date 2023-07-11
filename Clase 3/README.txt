@@ -1,0 +1,1 @@
+This is the third JavaScript class at Coderhouse
