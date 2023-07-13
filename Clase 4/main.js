@@ -62,7 +62,7 @@ const BOLSA = 485.15;
 const CONTADO = 510.51;
 
 let price;
-let dolarType = parseInt(prompt("Enter a dolar type 1. BANCO\n2. BLUE\n3. MAYORISTA\n4. BOLSA\n5. CONTADO LIQUI [0 Para salir]: "));
+let dolarType = parseInt(prompt("Enter a dolar type \n1. BANCO\n2. BLUE\n3. MAYORISTA\n4. BOLSA\n5. CONTADO LIQUI \n[0 Para salir]: "));
 let amount = parseInt(prompt("How much do yo want to buy?: "));
 
 while(dolarType != 0){
