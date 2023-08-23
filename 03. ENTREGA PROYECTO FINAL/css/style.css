@@ -1,0 +1,87 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+fieldset {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    font-weight: bold;
+}
+
+fieldset input {
+    display: block;
+    width: 90%;
+}
+
+fieldset button {
+    height: 30px;
+    width: 100px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+#btnAdd:hover {
+    background-color: greenyellow;
+}
+
+#btnUpdate:hover {
+    background-color: yellow;
+}
+
+table {
+    width: 100%;
+    border: 1px solid #000;
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+table button {
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.btnEliminar {  
+    background-color: red;
+    color:white;
+}
+
+.btnEliminar:hover{
+    background-color: #ff4545;
+}
+
+th, td {
+    width: 25%;
+    text-align: left;
+    vertical-align: middle;
+    border: 1px solid #000;
+    border-collapse: collapse;
+    padding: 0.3em
+}
+
+th {
+    background: blue;
+    text-align: center;
+    color: white;
+}
+
+select {
+    display: block;
+    width: 90%;
+}
+
+.passwd {
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    font-size: 25px;
+}

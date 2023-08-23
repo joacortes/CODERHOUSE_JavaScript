@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Tercera entrega del proyecto final</h1>
+    <form>
+        <fieldset>
+            <legend>Guardar Personaje</legend>
+            <label for="name">Nick: </label> <input type="text" name="name" id="name">
+            <label for="raza">Raza: </label> 
+            <select name="raza" id="raza">
+                <option value="Humano">Humano</option>
+                <option value="Elfo">Elfo</option>
+                <option value="Enano">Enano</option>
+                <option value="Gnomo">Gnomo</option>
+            </select>
+            <label for="clase">Clase: </label> 
+            <select name="clase" id="clase">
+                <option value="Paladín">Paladín</option>
+                <option value="Mago">Mago</option>
+                <option value="Guerrero">Guerrero</option>
+                <option value="Druida">Druida</option>
+            </select>
+            <label for="contra">Password: </label> <input type="password" name="contra" id="contra">
+            <label for="email">Email: </label> <input type="email" name="email" id="email">
+            <button type="submit" id="btnAdd">Agregar</button>
+            <button type="submit" id="btnUpdate">Actualizar</button>
+        </fieldset>
+    </form>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Nick</th>
+                <th>Raza</th>
+                <th>Clase</th>
+                <th>Contraseña</th>
+                <th>Email</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+    </table>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
