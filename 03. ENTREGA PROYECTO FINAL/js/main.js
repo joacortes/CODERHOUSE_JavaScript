@@ -66,7 +66,7 @@ const readData = () => {
         html += "<td>" + element.clase + "</td>";
         html += `<td> <input type="password" value="${element.contra}" class="passwd" id="passwd${index}" readonly></td>`;
         html += "<td>" + element.email + "</td>";
-        html += '<td><button onclick="deleteData(' + index + ')" class="btnEliminar">Eliminar</button> <button onclick="updateData(' + index + ')">Actualizar</button> <button onclick="showPsswd(' + index + ')" id="btnPasswd">Password</button>'
+        html += '<td><button onclick="deleteData(' + index + ')" class="btnEliminar">Eliminar</button> <button onclick="updateData(' + index + ')">Actualizar</button> <button onclick="showPsswd(' + index + ')" id="btnPasswd'+ index + '">Mostrar</button>'
         html += "</tr>"
     });
 
@@ -173,11 +173,14 @@ const showPsswd = (index) =>{
     }
 
     let passwd = document.getElementById(`passwd${index}`);
+    let btnPasswd = document.getElementById(`btnPasswd${index}`);
 
     if(passwd.type == 'text'){
         passwd.type = 'password';
+        btnPasswd.innerHTML = "Mostrar";
     }else{
         passwd.type = 'text';
+        btnPasswd.innerHTML = "Ocultar";
     }
     
 }
